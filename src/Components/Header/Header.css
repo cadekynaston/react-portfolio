@@ -1,0 +1,9 @@
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  font-size: 5em;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2F4858
+}
