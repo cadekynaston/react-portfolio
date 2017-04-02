@@ -1,8 +1,9 @@
 .nav-container {
   display: flex;
   flex-direction: row;
-  color: blue;
   justify-content: center;
+  flex-wrap: wrap;
+
 }
 
 .nav-container a{
@@ -13,15 +14,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top: solid black 1px;
 }
+
+
 
 .nav-container a:hover{
   color: #F6AE2D;
 }
 
-.nav-name{
-  display: none;
-}
+
 
 
 /*@media (min-width: 700px){

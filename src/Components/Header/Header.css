@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4em;
-  font-size: 5em;
-  font-family: 'Roboto Condensed', sans-serif;
+  flex-wrap: wrap;
+  height: 5em;
+  font-size: 4em;
   color: #2F4858
 }

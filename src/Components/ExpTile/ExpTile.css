@@ -1,0 +1,12 @@
+.experience-tile {
+  height: 300px;
+  width: 300px;
+  background-color: white;
+  color: #3a5161;
+  margin: 1em;
+}
+
+.icon {
+  margin: 1em;
+  font-size: 4em;
+}

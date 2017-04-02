@@ -1,16 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
 .App {
   text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
 }
- img{
-   min-width: 400px;
+
+.large-img-container{
+  position:relative;
+  overflow: hidden;
+}
+img{
+   width:700px;
+   min-width: 100vw;
    vertical-align: top;
+   margin-left: 50%;
+   transform: translateX(-50%);
  }
 
-.App-Main {
+.education-experience {
   background-color: #222;
-  height: 250px;
   color: white;
   padding: 1em;
+}
+
+.exp-container {
+  display:flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
