@@ -12,7 +12,7 @@ class App extends Component {
         <Header />
         <Nav />
         <div className="large-img-container">
-          <img src={slc} alt="Missing Image"/>
+          <img src={slc} alt="Missing"/>
         </div>
         <div className="education-experience">
           <h2>Education & Experience</h2>
