@@ -9,6 +9,8 @@ import code from '../public/code.svg';
 import plane from '../public/plane.svg';
 import grocery from '../public/grocery.svg';
 
+
+
 class App extends Component {
   render() {
     return (

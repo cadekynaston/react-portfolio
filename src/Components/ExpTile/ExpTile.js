@@ -8,7 +8,7 @@ class ExpTile extends Component {
       <img className="icon" src={this.props.img} alt="missing"/>
         <div className="description-container">
           <div className="title">
-            TITLE
+            {this.props.title}
           </div>
           <div className="description">
             description
