@@ -4,6 +4,10 @@ import Nav from './Components/Nav';
 import Header from './Components/Header';
 import ExpTile from './Components/ExpTile';
 import slc from '../public/slc.jpg';
+import grad from '../public/graduate.svg';
+import code from '../public/code.svg';
+import plane from '../public/plane.svg';
+import grocery from '../public/grocery.svg';
 
 class App extends Component {
   render() {
@@ -15,12 +19,12 @@ class App extends Component {
           <img src={slc} alt="Missing"/>
         </div>
         <div className="education-experience">
-          <h2>Education & Experience</h2>
+          <h1>Education & Experience</h1>
           <div className="exp-container">
-            <ExpTile />
-            <ExpTile />
-            <ExpTile />
-            <ExpTile />
+            <ExpTile  img={grad} title="Weber State University" description="Bachelors degree in computer science"/>
+            <ExpTile  img={plane} title="Hill Air Force Base" description="Bachelors degree in computer science"/>
+            <ExpTile  img={code} title="Weber State University" description="Bachelors degree in computer science"/>
+            <ExpTile  img={grocery} title="Weber State University" description="Bachelors degree in computer science"/>
           </div>
         </div>
       </div>

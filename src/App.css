@@ -3,13 +3,18 @@
 .App {
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
+  color: #2F4858;
+}
+
+h1 {
+  font-weight: normal;
 }
 
 .large-img-container{
   position:relative;
   overflow: hidden;
 }
-img{
+.large-img-container img{
    width:700px;
    min-width: 100vw;
    vertical-align: top;
@@ -18,8 +23,7 @@ img{
  }
 
 .education-experience {
-  background-color: #222;
-  color: white;
+  background-color: white;
   padding: 1em;
 }
 
