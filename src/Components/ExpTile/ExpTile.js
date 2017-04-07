@@ -11,8 +11,10 @@ class ExpTile extends Component {
             {this.props.title}
           </div>
           <div className="description">
-            description
-            <i className="fa fa-graduation-cap" aria-hidden="true"></i>
+            {this.props.description}
+          </div>
+          <div className="year">
+            {this.props.year}
           </div>
         </div>
       </div>
