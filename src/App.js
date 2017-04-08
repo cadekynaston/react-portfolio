@@ -8,7 +8,9 @@ import grad from '../public/graduate.svg';
 import code from '../public/code.svg';
 import plane from '../public/plane.svg';
 import grocery from '../public/grocery.svg';
+import logo from '../public/logo.svg';
 import data from '../public/data.js';
+import mountain from '../public/mountain.jpg'
 
 
 
@@ -17,6 +19,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
+        <img src={logo} className="main-logo" alt="Missing"/>
         <Nav />
         <div className="large-img-container">
           <img src={slc} alt="Missing"/>
@@ -27,8 +30,12 @@ class App extends Component {
             <ExpTile  img={grad} title="Weber State University" description="Bachelors degree computer science" year='Aug 2017'/>
             <ExpTile  img={plane} title="Hill Air Force Base" description="Computer Science Pathways Intern" year='May 2016 - current'/>
             <ExpTile  img={code} title="Weber State University" description="Chi Tester Programming intern" year='Dec 2016 - May 2016'/>
-            <ExpTile  img={grocery} title="Smiths Food & Drug" description="Grocery Stocker / Cashier" year='jun 2010 - Dec 2016'/>
+            <ExpTile  img={grocery} title="Smiths Food & Drug" description="Grocery Stocker / Cashier" year='Jun 2010 - Dec 2016'/>
           </div>
+        </div>
+
+        <div className="large-img-container">
+          <img src={mountain} alt="Missing"/>
         </div>
       </div>
     );

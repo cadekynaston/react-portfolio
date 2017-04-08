@@ -13,6 +13,7 @@
 .description-container {
   flex-grow: 1;
   height: 100%;
+  position: relative;
 }
 
 .description-container .title {
@@ -24,7 +25,12 @@
 }
 
 .description-container .year {
-  vertical-align: bottom;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  font-size: .8em;
+  color: #626C66;
 
 }
 .icon {
