@@ -1,0 +1,43 @@
+.portfolio-tile {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 1em;
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+
+.middle-text-container {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+.middle-text {
+
+  color: #222222;
+  font-size: 2em;
+
+}
+
+.item-image {
+
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    transition: .4s ease;
+    backface-visibility: hidden;
+
+}
+.portfolio-tile:hover .item-image {
+  opacity: 0.25;
+}
+
+.portfolio-tile:hover .middle-text-container {
+  opacity: 1;
+}

@@ -30,13 +30,13 @@ hr{
   height: 15em;
   color: #222;
 }
-.education-experience {
+.tile-container {
   background-color: white;
   color: #222;
   padding: 1em;
 }
 
-.education-experience h1 {
+.tile-container h1 {
   font-weight: normal;
   font-size: 1.75em;
 }
