@@ -1,20 +1,35 @@
 .nav-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-
+  justify-content: space-between;
+  
+  background-color: white;
 }
 
-.nav-container a{
-  color: #2F4858;
+.nav-items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 2em;
+}
+
+.nav-logo img{
+  height: 80px;
+  width: 80px;
+  margin-left: 2em;
+}
+
+.nav-items a{
+  color: black;
   height: 2em;
   padding: .5em;
   text-decoration: none;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
-  border-top: solid black 1px;
+
+
 }
 
 

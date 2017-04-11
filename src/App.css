@@ -4,6 +4,7 @@
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
   color: #222;
+  z-index: 2;
 }
 
 hr{
@@ -26,13 +27,9 @@ hr{
    transform: translateX(-50%);
  }
 
-.main-logo{
-  height: 15em;
-  color: #222;
-}
 .tile-container {
   background-color: white;
-  color: #222;
+  color: black;
   padding: 1em;
 }
 
@@ -47,4 +44,71 @@ hr{
   justify-content: space-around;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: center;
+  padding: 10px;
+  align-items: center;
+
+
+}
+
+.footer a {
+  margin: 5px 15px;
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  align-items: center;
+
+
+}
+
+.footer a:hover {
+  color: grey;
+
+}
+
+.footer-logo {
+  fill: white;
+  color: white;
+  height: 2.5em;
+}
+
+.parallax-group {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  color: white;
+
+}
+.parallax-group img{
+
+}
+
+.parallax-back {
+  display: flex;
+  justify-content: center;
+  height: 50vh;
+  color: white;
+  -webkit-transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(2);
+  align-items: center;
+  font-size: 3em;
+  position: relative;
+}
+
+.parallax-front {
+  position: relative;
+  z-index: 2;
+}
+
+.parallax-first {
+  z-index: 0;
+}
+
+.parallax-second {
+  z-index: -1;
 }

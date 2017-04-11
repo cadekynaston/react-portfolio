@@ -1,0 +1,16 @@
+html {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: black;
+  -webkit-overflow-scrolling: touch;
+
+  perspective: 1px;
+  -webkit-perspective: 1px;
+}

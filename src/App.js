@@ -12,6 +12,10 @@ import grocery from '../public/grocery.svg';
 import logo from '../public/logo.svg';
 import mountain from '../public/mountain.jpg'
 import connect4 from '../public/connect4.png'
+import jsfiddle from '../public/jsfiddle.svg'
+import logoWhite from '../public/logo-white.svg';
+import logoBlack from '../public/logo-black.svg';
+
 
 
 
@@ -20,9 +24,39 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <img src={logo} className="main-logo" alt="Missing"/>
-        <Nav />
+      <div className = "parallax-group">
+      <div className="parallax-front">
+      <Nav logo={logo}/>
+      <Header />
+      </div>
+
+        <div className="parallax-back par">
+            Portfolio
+        </div>
+      <div className="parallax-front">
+
+
+      <div className="tile-container">
+
+        <div className="exp-container">
+          <PortTile  img={connect4} title="Connect4" link="https://cadekynaston.github.io/connect4/"/>
+          <PortTile  img={jsfiddle} title="conn" link="http://jsfiddle.net/user/cadekynaston/"/>
+          <PortTile  img={code} title="Drums" />
+          <PortTile  img={connect4} title="Connect4" link="https://cadekynaston.github.io/connect4/"/>
+          <PortTile  img={jsfiddle} title="conn" link="http://jsfiddle.net/user/cadekynaston/"/>
+          <PortTile  img={code} title="Drums" />
+
+        </div>
+      </div>
+      </div>
+
+
+        <div className="parallax-back">
+            Experience
+        </div>
+        <div className="parallax-front">
+
+
         <div className="large-img-container">
           <img src={slc} alt="Missing"/>
         </div>
@@ -40,15 +74,18 @@ class App extends Component {
           <img src={mountain} alt="Missing"/>
         </div>
 
-        <div className="tile-container">
-          <h1>Portfolio</h1>
-          <div className="exp-container">
-            <PortTile  img={connect4} title="Connect4" link="https://cadekynaston.github.io/connect4/"/>
-            <PortTile  img={plane} title="Hill Air Force Base" description="Computer Science Pathways Intern" year='May 2016 - current'/>
-            <PortTile  img={code} title="Weber State University" description="Chi Tester Programming intern" year='Dec 2016 - May 2016'/>
-            <PortTile  img={grocery} title="Smiths Food & Drug" description="Grocery Stocker / Cashier" year='Jun 2010 - Dec 2016'/>
-          </div>
+
+        <div className="footer">
+          <a href="">github</a>
+          <a href="">facebook</a>
+          <a href=""><img src={logoWhite} className="footer-logo" alt="missing"/></a>
+          <a href="">instagram</a>
+          <a href="">linked in</a>
+
         </div>
+        </div>
+        </div>
+
       </div>
     );
   }
