@@ -1,18 +1,27 @@
 import React, { Component } from 'react';
+
 import './Nav.css';
 
 class Nav extends Component {
+   hideShow = () => {
+    alert('hi')
+  }
+
   render(props) {
     return (
       <div className="nav-container">
-      <div className="nav-logo">
-        <a href="#"><img src={this.props.logo} alt="missing"/></a>
+      <div className="logo-button-container">
+        <div className="nav-logo">
+          <a href="#"><img src={this.props.logo} alt="missing"/></a>
+        </div>
+        <div className="nav-button" onclick={this.hideShow}>text</div>
       </div>
+
       <div className="nav-items">
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="about">About</a>
+        <a href="exp">Experience</a>
+        <a href="port">Portfolio</a>
+        <a href="cont">Contact</a>
         </div>
       </div>
     );

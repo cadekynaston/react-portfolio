@@ -104,11 +104,3 @@ hr{
   position: relative;
   z-index: 2;
 }
-
-.parallax-first {
-  z-index: 0;
-}
-
-.parallax-second {
-  z-index: -1;
-}
