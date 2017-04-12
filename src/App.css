@@ -3,7 +3,6 @@
 .App {
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  color: #222;
   z-index: 2;
 }
 
@@ -90,17 +89,47 @@ hr{
 
 .parallax-back {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 60vh;
   color: white;
   -webkit-transform: translateZ(-1px) scale(2);
   transform: translateZ(-1px) scale(2);
   align-items: center;
   font-size: 3em;
   position: relative;
+  background-color: black;
+}
+.parallax-back img{
+  width: 130px;
+  height: 130px;
 }
 
 .parallax-front {
   position: relative;
-  z-index: 2;
+  z-index: 10;
+}
+
+.about-me {
+  height: 200px;
+  background-color: white;
+  color: black;
+}
+
+.top-header {
+
+
+}
+
+.middle-part {
+  z-index: 5;
+}
+
+.parallax-group {
+
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+
+
 }
