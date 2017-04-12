@@ -14,7 +14,7 @@ class Nav extends Component {
         <div className="nav-logo">
           <a href="#"><img src={this.props.logo} alt="missing"/></a>
         </div>
-        <div className="nav-button" onclick={this.hideShow}>text</div>
+        <div className="nav-button" onclick={this.hideShow}>menu</div>
       </div>
 
       <div className="nav-items">
