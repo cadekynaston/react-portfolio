@@ -16,7 +16,8 @@ import jsfiddle from '../public/jsfiddle.svg'
 import logoWhite from '../public/logo-white.svg';
 import logoBlack from '../public/logo-black.svg';
 import briefcase from '../public/briefcase.svg';
-
+import turtle from '../public/turtle.svg';
+import mailbox from '../public/mailbox.svg';
 
 
 
@@ -31,19 +32,19 @@ class App extends Component {
             <Header />
           </div>
           <div className="parallax-back top-header">
-          <img src={briefcase} alt="missing" />
+          <img src={turtle} alt="missing" />
             About Me
           </div>
 
 
           <div className="parallax-front">
-            <div className="about-me"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            <div className="about-me">
+              <p>My name is Cade. I am graduating from Weber State University with a Bachelors Degree in computer science at the end of summer 2017. The main thing you need to know about me is that I really like doing good work. Also, I love <a href="">skateboarding</a> and <a href="https://www.instagram.com/p/vC6hvLjnbJ/?taken-by=cadekynaston">basketball</a>.</p>
             </div>
           </div>
           <div className="parallax-back middle-part">
             <img src={briefcase} alt="missing" />
-            <p>Portfolio</p>
-
+            Portfolio
           </div>
           <div className="parallax-front">
             <div className="tile-container">
@@ -55,7 +56,7 @@ class App extends Component {
             </div>
           </div>
           <div className="parallax-back">
-            <img src={briefcase} alt="missing" />
+            <img src={mailbox} alt="missing" />
               Experience
           </div>
           <div className="parallax-front">
@@ -67,14 +68,21 @@ class App extends Component {
                 <ExpTile  img={grocery} title="Smiths Food & Drug" description="Grocery Stocker / Cashier" year='Jun 2010 - Dec 2016'/>
               </div>
             </div>
-          <div className="footer">
-            <a href="">github</a>
-            <a href="">facebook</a>
-            <a href=""><img src={logoWhite} className="footer-logo" alt="missing"/></a>
-            <a href="">instagram</a>
-            <a href="">linked in</a>
-          </div>
         </div>
+        <div className="parallax-back">
+          <img src={mailbox} alt="missing" />
+            Contact
+        </div>
+        <div className="parallax-front">
+
+        <div className="footer">
+          <a href="">github</a>
+          <a href="">facebook</a>
+          <a href=""><img src={logoWhite} className="footer-logo" alt="missing"/></a>
+          <a href="">instagram</a>
+          <a href="">linked in</a>
+        </div>
+      </div>
       </div>
 
     </div>

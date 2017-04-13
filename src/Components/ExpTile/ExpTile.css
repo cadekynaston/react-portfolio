@@ -1,39 +1,23 @@
 .experience-tile {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: auto;
   width: 400px;
   max-width: 600px;
   background-color: white;
-  margin-bottom: 1em;
+  margin: 3em 0;
   padding: .3em;
-  border: 1px solid #222;
 }
 
-.description-container {
-  flex-grow: 1;
-  height: 100%;
-  position: relative;
-}
 
-.description-container .title {
-  font-size: 1.2em;
+.title {
+  font-size: 2em;
 }
-.description-container .description {
-  font-size: .8em;
-
-}
-
-.description-container .year {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  bottom: 0;
-  font-size: .8em;
-  color: #626C66;
+.description {
+  font-size: 1em;
 
 }
 .icon {
-  height: 5.5em;
-  margin-top: .5em;
+  height: 13em;
+  margin-bottom: 1em;
 }

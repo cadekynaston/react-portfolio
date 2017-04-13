@@ -3,8 +3,12 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 3em;
+  font-size: 4.5em;
   background-color: white;
   color: black;
-  height: 100vh;
+  height: calc(100vh - 90px);
+}
+
+.top p{
+  margin-top: -5vh; 
 }
