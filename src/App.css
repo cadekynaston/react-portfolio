@@ -21,7 +21,8 @@
 .tile-container {
   background-color: white;
   color: black;
-  padding: 1em;
+  padding: 4em 2em;
+  min-height: 100vh;
 }
 
 .tile-container h1 {
@@ -75,6 +76,7 @@
   transform-style: preserve-3d;
   color: white;
 
+
 }
 .parallax-group img{
 
@@ -110,7 +112,7 @@
   height: 100vh;
   background-color: white;
   color: black;
-  padding: 1em;
+  padding: 2em;
 
 }
 .about-me p{

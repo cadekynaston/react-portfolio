@@ -1,9 +1,10 @@
 let hideShow = () => {
   let nav = document.querySelector("#nav-id");
-  if (nav.className === "nav-container") {
-    nav.className += "nav-container hide";
+  console.log(nav.className)
+  if(nav.className === "nav-items hide") {
+    nav.className = "nav-items"
   } else {
-    nav.className = "nav-container";
+    nav.className = "nav-items hide"
   }
 }
 

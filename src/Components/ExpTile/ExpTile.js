@@ -5,7 +5,9 @@ class ExpTile extends Component {
   render(props) {
     return (
       <div className="experience-tile">
-        <img className="icon" src={this.props.img} alt="missing"/>
+        <div className="icon-container">
+          <img className="icon" src={this.props.img} alt="missing"/>
+        </div>
         <div className="title">
           {this.props.title}
         </div>

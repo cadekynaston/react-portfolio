@@ -1,10 +1,17 @@
 .nav-container {
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+
+}
+.nav {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: white;
+  justify-content: space-between;
   padding-top: 1em;
-
+  width: 100%;
+  max-width: 1200px;
 }
 
 .nav-items {
@@ -13,7 +20,7 @@
   justify-content: center;
   align-items: center;
   margin-right: 1em;
-  display: none;
+
 
 }
 
@@ -46,6 +53,7 @@
 .logo-button-container {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .nav-button {
@@ -64,14 +72,27 @@
   cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
 
 
 @media (min-width: 800px){
   .nav-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     text-decoration: none;
+  }
+
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1em;
+    width: 100%;
+
   }
 
   .nav-items a{

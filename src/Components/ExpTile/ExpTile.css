@@ -1,5 +1,6 @@
 .experience-tile {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   height: auto;
   width: 400px;
@@ -17,7 +18,18 @@
   font-size: 1em;
 
 }
+
+.icon-container {
+  height: 300px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
 .icon {
-  height: 13em;
+  position: relative;
+  width:100%;
   margin-bottom: 1em;
 }
