@@ -6,11 +6,9 @@ import ExpTile from './Components/ExpTile';
 import PortTile from './Components/PortTile';
 import slc from '../public/slc.jpg';
 import grad from '../public/graduate.svg';
-import code from '../public/code.svg';
 import paper from '../public/paper.svg';
 import groceries from '../public/groceries.svg';
 import logo from '../public/logo.svg';
-import mountain from '../public/mountain.jpg'
 import connect4 from '../public/connect4.png'
 import jsfiddle from '../public/jsfiddle.svg'
 import logoWhite from '../public/logo-white.svg';
@@ -24,6 +22,11 @@ import earth from '../public/earth.svg';
 import desktop from '../public/desktop.svg';
 import codepen from '../public/codepen.svg';
 import umbrella from '../public/umbrella.svg';
+import insta from '../public/instagram.svg'
+import fb from '../public/facebook.svg'
+import li from '../public/linkedin.svg'
+import gh from '../public/github.svg'
+import email from '../public/email.svg';
 
 
 
@@ -43,7 +46,7 @@ class App extends Component {
 
           <div className="parallax-front">
             <div id="about" className="about-me">
-              <p>My name is Cade. I am graduating from Weber State University with a Bachelors Degree in computer science at the end of summer 2017. The main thing you need to know about me is that I really like doing good work. Also, I love <a href="">skateboarding</a> and <a href="https://www.instagram.com/p/vC6hvLjnbJ/?taken-by=cadekynaston">basketball</a>.</p>
+              <p>My name is Cade. I am graduating from Weber State University with a bachelor's degree in computer science at the end of summer 2017. The main thing you need to know about me is that I enjoy programming and I really like doing good work. Lately I have been focusing on making web apps using javascript and C#. I learned react to make this website! Also, I love <a href="">skateboarding</a> and <a href="https://www.instagram.com/p/vC6hvLjnbJ">basketball</a>.</p>
             </div>
           </div>
           <div className="parallax-back">
@@ -51,13 +54,11 @@ class App extends Component {
             Portfolio
           </div>
           <div className="parallax-front">
-            <div id="portfolio" className="tile-container">
-              <div className="exp-container">
-                <PortTile  img={connect4} title="Connect4" link="https://cadekynaston.github.io/connect4/"/>
+            <div className="tile-container">
+              <div id="portfolio" className="exp-container">
+                <PortTile  img={connect4} title="Connect4" description="A connect 4 game I created using html, css, and vanilla js" link="https://cadekynaston.github.io/connect4/"/>
                 <PortTile  img={jsfiddle} title="JSfiddle" link="https://jsfiddle.net/user/cadekynaston/"/>
                 <PortTile  img={codepen} title="Codepen" link="https://codepen.io/cadekynastoN/"/>
-                <PortTile  img={umbrella} title="Connect4" link="https://cadekynaston.github.io/connect4/"/>
-
               </div>
             </div>
           </div>
@@ -66,8 +67,8 @@ class App extends Component {
               Experience
           </div>
           <div className="parallax-front">
-            <div id="experience" className="tile-container">
-              <div className="exp-container">
+            <div className="tile-container">
+              <div id="experience" className="exp-container">
                 <ExpTile  img={weber} title="Weber State University" description="Bachelors Degree Computer Science"/>
                 <ExpTile  img={paper} title="Hill Air Force Base" description="Computer Science Pathways Intern"/>
                 <ExpTile  img={desktop} title="Weber State University" description="Chi Tester Programming Intern"/>
@@ -75,18 +76,23 @@ class App extends Component {
               </div>
             </div>
         </div>
-        <div className="parallax-back">
+        <div className="parallax-back footer-parallax">
           <img src={mailbox} alt="missing" />
-            Contact
+              <p>Thanks for stopping by! Send me a message if you would like to get in touch. Check the lower left corner or send an email to: cadekynaston@gmail.com</p>
         </div>
         <div className="parallax-front">
 
-        <div id="contact" className="footer">
-          <a href="">github</a>
-          <a href="">facebook</a>
-          <a href=""><img src={logoWhite} className="footer-logo" alt="missing"/></a>
-          <a href="">instagram</a>
-          <a href="">linked in</a>
+        <div id="contact" className="footer-container">
+          <div className="footer">
+            <div className="social-container">
+              <a href="https://www.linkedin.com/in/cade-kynaston-003134ba" className="social-icon"><img src={li} alt="missing"/></a>
+              <a href="http://www.github.com/cadekynaston" className="social-icon"><img src={gh} alt="missing"/></a>
+              <a href="mailto:cadekynaston@gmail.com?Subject=Hey%20Cade" className="social-icon"><img src={email} alt="missing"/></a>
+            </div>
+            <div className="footer-name">
+              Cade Kynaston 2017
+            </div>
+          </div>
         </div>
       </div>
       </div>
