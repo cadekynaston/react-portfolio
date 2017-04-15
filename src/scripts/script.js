@@ -8,4 +8,4 @@ let hideShow = () => {
   }
 }
 
-export default hideShow
+export default hideShow;

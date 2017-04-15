@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import hideShow from './../../scripts/script';
 
 import './Nav.css';

@@ -4,9 +4,15 @@
   flex-wrap: wrap;
   justify-content: center;
   margin: 1em;
-  width: 300px;
-  height: 300px;
+  width: 270px;
+  height: 270px;
   position: relative;
+  text-decoration: none;
+  margin-bottom: 1.5em;
+}
+
+.portfolio-tile a{
+  text-decoration: none;
 }
 
 .middle-text-container {
@@ -16,12 +22,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+  -ms-transform: translate(-50%, -50%);
+  width: 90%;
 }
 .middle-text {
 
-  color: #222222;
-  font-size: 2em;
+  color: black;
+  font-size: 1.8em;
 
 }
 
@@ -33,10 +40,45 @@
     backface-visibility: hidden;
 
 }
+
+.portfolio-tile-title {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+
+}
 .portfolio-tile:hover .item-image {
-  opacity: 0.25;
+  opacity: 0.20;
 }
 
 .portfolio-tile:hover .middle-text-container {
   opacity: 1;
+}
+
+.first-tile {
+
+  animation: shake 1s infinite;
+
+}
+
+@keyframes shake{
+  0%{
+    margin-top:0px;
+  }
+  10%{
+    margin-top:-10px;
+  }
+  20%{
+    margin-top:10px;
+  }
+  30%{
+    margin-top:-5px;
+  }
+  40%{
+    margin-top:5px;
+  }
+  50%{
+    margin-top:0px;
+  }
+
 }

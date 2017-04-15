@@ -4,16 +4,12 @@ import Nav from './Components/Nav';
 import Header from './Components/Header';
 import ExpTile from './Components/ExpTile';
 import PortTile from './Components/PortTile';
-import slc from '../public/slc.jpg';
-import grad from '../public/graduate.svg';
 import paper from '../public/paper.svg';
 import groceries from '../public/groceries.svg';
 import logo from '../public/logo.svg';
 import connect4 from '../public/connect4.png'
 import jsfiddle from '../public/jsfiddle.svg'
 import logoWhite from '../public/logo-white.svg';
-import logoBlack from '../public/logo-black.svg';
-import briefcase from '../public/briefcase.svg';
 import turtle from '../public/turtle.svg';
 import mailbox from '../public/mailbox.svg';
 import pantone from '../public/pantone.svg';
@@ -21,9 +17,6 @@ import weber from '../public/weber.jpg';
 import earth from '../public/earth.svg';
 import desktop from '../public/desktop.svg';
 import codepen from '../public/codepen.svg';
-import umbrella from '../public/umbrella.svg';
-import insta from '../public/instagram.svg'
-import fb from '../public/facebook.svg'
 import li from '../public/linkedin.svg'
 import gh from '../public/github.svg'
 import email from '../public/email.svg';
@@ -31,42 +24,44 @@ import email from '../public/email.svg';
 
 
 class App extends Component {
-  render() {
+
+
+    render() {
     return (
       <div className="App">
-        <div className = "parallax-group">
-          <div className="parallax-front">
-            <Nav logo={logo}/>
-            <Header />
+        <div className = "parallax">
+          <div className="parallax-layer parallax-front">
+              <Nav logo={logo} />
+              <Header />
           </div>
-          <div className="parallax-back top-header">
+          <div className="parallax-layer parallax-back">
           <img src={turtle} alt="missing" />
             About Me
           </div>
 
-          <div className="parallax-front">
-            <div id="about" className="about-me">
+          <div className="parallax-layer parallax-front">
+            <div id="about"  className="about-me">
               <p>My name is Cade. I am graduating from Weber State University with a bachelor's degree in computer science at the end of summer 2017. The main thing you need to know about me is that I enjoy programming and I really like doing good work. Lately I have been focusing on making web apps using javascript and C#. I learned react to make this website! Also, I love <a href="">skateboarding</a> and <a href="https://www.instagram.com/p/vC6hvLjnbJ">basketball</a>.</p>
             </div>
           </div>
-          <div className="parallax-back">
+          <div className="parallax-layer parallax-back">
             <img src={pantone} alt="missing" />
             Portfolio
           </div>
-          <div className="parallax-front">
+          <div className="parallax-layer parallax-front">
             <div className="tile-container">
               <div id="portfolio" className="exp-container">
-                <PortTile  img={connect4} title="Connect4" description="A connect 4 game I created using html, css, and vanilla js" link="https://cadekynaston.github.io/connect4/"/>
-                <PortTile  img={jsfiddle} title="JSfiddle" link="https://jsfiddle.net/user/cadekynaston/"/>
-                <PortTile  img={codepen} title="Codepen" link="https://codepen.io/cadekynastoN/"/>
+                <PortTile  img={connect4} x="first-tile" title="Connect4" description="A game I created using html, css, and vanilla js." link="https://cadekynaston.github.io/connect4/"/>
+                <PortTile  img={jsfiddle} title="JSfiddle" description="Jsfiddle is awesome for doing small online coding projects." link="https://jsfiddle.net/user/cadekynaston/"/>
+                <PortTile  img={codepen} title="Codepen" description="Codepen is similar to jsfiddle. A nice place to do little coding experiments." link="https://codepen.io/cadekynastoN/"/>
               </div>
             </div>
           </div>
-          <div className="parallax-back">
+          <div className="parallax-layer parallax-back">
             <img src={earth} alt="missing" />
               Experience
           </div>
-          <div className="parallax-front">
+          <div className="parallax-layer parallax-front">
             <div className="tile-container">
               <div id="experience" className="exp-container">
                 <ExpTile  img={weber} title="Weber State University" description="Bachelors Degree Computer Science"/>
@@ -76,13 +71,13 @@ class App extends Component {
               </div>
             </div>
         </div>
-        <div className="parallax-back footer-parallax">
+        <div className="parallax-layer parallax-back footer-parallax">
           <img src={mailbox} alt="missing" />
               <p>Thanks for stopping by! Send me a message if you would like to get in touch. Check the lower left corner or send an email to: cadekynaston@gmail.com</p>
         </div>
-        <div className="parallax-front">
+        <div className="parallax-layer parallax-front">
 
-        <div id="contact" className="footer-container">
+        <div id="contact" className="footer-container ">
           <div className="footer">
             <div className="social-container">
               <a href="https://www.linkedin.com/in/cade-kynaston-003134ba" className="social-icon"><img src={li} alt="missing"/></a>

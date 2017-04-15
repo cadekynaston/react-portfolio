@@ -3,20 +3,9 @@
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  z-index: 2;
+  z-index: 10;
 }
 
-.large-img-container{
-  position:relative;
-  overflow: hidden;
-}
-.large-img-container img{
-   width:700px;
-   min-width: 100vw;
-   vertical-align: top;
-   margin-left: 50%;
-   transform: translateX(-50%);
- }
 
 .tile-container {
   display: flex;
@@ -54,7 +43,7 @@
   align-items: center;
   width: 95%;
   max-width: 1000px;
-  padding: 4em 2em;
+  margin-top: 2em;
 }
 
 .footer-container {
@@ -75,12 +64,26 @@
   height: 30px;
 }
 
-
-.parallax-group {
+.parallax {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
+  perspective: 1px;
+  -webkit-perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
   color: white;
+  background-color: black;
 }
+
+.parallax-layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 
 
 .parallax-back {
@@ -96,16 +99,21 @@
   position: relative;
   background-color: black;
 }
+.parallax-front {
+  transform: translateZ(0);
+}
 
 .footer-parallax{
-  height: 30vh;
-  margin-top: 4em;
+  height: 35vh;
+  margin-top: 3.5em;
+  overflow: visible;
 
 }
 
 .footer-parallax p {
   max-width: 700px;
   font-size: .8em;
+  padding: .5em;
 }
 
 
