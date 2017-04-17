@@ -1,0 +1,11 @@
+html {
+  overflow-x: hidden;
+}
+body {
+
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: black;
+  -webkit-overflow-scrolling: touch;
+}
