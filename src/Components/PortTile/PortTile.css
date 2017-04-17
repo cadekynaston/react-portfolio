@@ -54,31 +54,3 @@
 .portfolio-tile:hover .middle-text-container {
   opacity: 1;
 }
-
-.first-tile {
-
-  animation: shake 1s infinite;
-
-}
-
-@keyframes shake{
-  0%{
-    margin-top:0px;
-  }
-  10%{
-    margin-top:-10px;
-  }
-  20%{
-    margin-top:10px;
-  }
-  30%{
-    margin-top:-5px;
-  }
-  40%{
-    margin-top:5px;
-  }
-  50%{
-    margin-top:0px;
-  }
-
-}
